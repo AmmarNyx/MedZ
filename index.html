@@ -13,19 +13,19 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/imgs/favicon-16x16.png"
+      href="imgs/favicon-16x16.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/imgs/favicon-32x32.png"
+      href="imgs/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="/imgs/favicon-512x512.png"
+      href="imgs/favicon-512x512.png"
     />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,13 +43,13 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="logo">
-          <a href="/">
+          <a href=".">
             <img class="logo__img" src="imgs/logo-dark.svg" alt="logo" />
           </a>
           <span class="logo__text">MedZ</span>
@@ -615,9 +615,20 @@
         <p class="copy">Copyright © 2025 MedZ - All rights reserved.</p>
       </div>
     </footer>
+    <!-- main -->
+    <script type="module" src="js/main.js"></script>
+    <!-- Lucide -->
     <script>
       lucide.createIcons();
     </script>
-    <script type="module" src="./js/main.js"></script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // speed of animation
+        once: true, // only animate once when scrolling down
+        offset: 100, // trigger point (px from top of screen)
+      });
+    </script>
   </body>
 </html>
